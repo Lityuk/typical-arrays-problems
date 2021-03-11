@@ -28,7 +28,7 @@ exports.avg = function avg(array) {
     if (Array.isArray(array) && array.length) {
 
         return array.reduce(function(previousValue, currentValue){
-            previousValue + currentValue}) / array.length;
+            return previousValue + currentValue}) / array.length;
       } else {
         return 0;
       }
